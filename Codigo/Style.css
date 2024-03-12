@@ -42,22 +42,22 @@ div.navbar{
     background:linear-gradient(to top, var(--color-5), var(--color-4), var(--color-3));
 }
 
-    div.navbar div.icon{
+    div.icon{
         width: 20%;
         margin-left: 40px;
     }
 
-    div.navbar div.navitems{
+    div.navitems{
         width: 55%;
     }
 
-        div.navbar div.navitems nav.topnav{
+        nav.topnav{
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-            div.navbar div.navitems nav.topnav a{
+            nav.topnav a{
                 float: left;
                 display: block;
                 color: var(--color-1);
@@ -67,21 +67,21 @@ div.navbar{
                 font-family: var(--subfont);
             }
 
-            div.navbar div.navitems nav.topnav a:hover{
+            nav.topnav a:hover{
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
                 background: linear-gradient(to top, var(--color-1), var(--color-4));
                 color: var(--color-5);
             }
 
-            div.navbar div.navitems nav.topnav a.active{
+            nav.topnav a.active{
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
                 background: linear-gradient(to top, var(--color-1), var(--color-4));
                 color: white;
             }
 
-    div.navbar div.searchbar{
+    div.searchbar{
         width: 25%;
         display: flex;
         margin-right: 40px;
@@ -91,11 +91,11 @@ div.navbar{
         border-radius: 100px;
     }
 
-        div.navbar div.searchbar form {
+        div.searchbar form {
             width: 100%;
         }
 
-            div.navbar div.searchbar input[type=text] {
+            div.searchbar input[type=text] {
                 float: left;
                 padding-left: 17px;
                 padding-top: 7px;
@@ -106,17 +106,18 @@ div.navbar{
                 font-size: 17px;
             }
 
-            div.navbar div.searchbar button {
+            div.searchbar button {
                 float: right;
                 padding: 7px 10px;
-                background: var(--color-1);
-                font-size: 17px;
                 border: none;
                 border-radius: 100px;
+                background: var(--color-1);
+                color: var(--color-5);
+                font-size: 17px;
                 cursor: pointer;
             }
 
-            div.navbar div.searchbar button:hover {
+            div.searchbar button:hover {
                 background: var(--color-2);
             }
 
@@ -153,35 +154,35 @@ footer{
         justify-content: center;
     }
 
-        div.botsections div.botcolumn{
+        div.botcolumn{
             display: flex;
             justify-items: center;
         }
 
-            div.botsections div#logo{
+            div#logo{
                 width: 33%;
                 margin-top: 30px;
             }
 
-            div.botsections div#logo a{
+            div#logo a{
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            div.botsections div#botnav{
+            div#botnav{
                 width: 50%;
                 margin-top: auto;
                 margin-bottom: auto;
                 justify-content: center;
             }
 
-                div.botsections div.botcolumn ul.botlist{
+                ul.botlist{
                     display: flex;
                     flex-direction: row;
                     list-style-type: none;
                 }
 
-                    div.botsections div.botcolumn ul.botlist li a{
+                    ul.botlist li a{
                         display: block;
                         margin: 15px;
                         padding: 5px;
@@ -190,7 +191,7 @@ footer{
                         color: var(--color-5);
                     }
 
-                    div.botsections div.botcolumn ul.botlist li a:hover{
+                    ul.botlist li a:hover{
                         color: white;
                     }
 
@@ -201,14 +202,15 @@ footer{
         justify-content: center;
     }
 
-        div.bottext div.social-icons{
+        div.social-icons{
             width: 33%;
             margin-top: 15px;
             display: flex;
             flex-direction: row;
             justify-content: center;
         }
-            div.bottext div.social-icons a{
+
+            div.social-icons a{
                 margin: 0px 15px;
             }
 
