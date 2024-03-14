@@ -12,7 +12,6 @@
   --large-fs: 2rem;
   --extral-fs: 2.5rem;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,18 +19,15 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-
 body {
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
   background-image: url(../Imagenes/Fondo-1.png);
 }
-
 a {
   text-decoration: none;
 }
-
 main {
   width: 100%;
   display: flex;
@@ -53,17 +49,14 @@ main {
     var(--color-3)
   );
 }
-
 #navitems {
   width: 55%;
 }
-
 #topnav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #topnav a {
   float: left;
   display: block;
@@ -73,21 +66,18 @@ main {
   font-size: var(--medium-fs);
   font-family: var(--subfont);
 }
-
 #topnav a:hover {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   background: linear-gradient(to top, var(--color-1), var(--color-4));
   color: var(--color-5);
 }
-
 #topnav a#active {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   background: linear-gradient(to top, var(--color-1), var(--color-4));
   color: white;
 }
-
 #searchbar {
   float: right;
   width: 15%;
@@ -97,11 +87,9 @@ main {
   border: 5px;
   border-radius: 100px;
 }
-
 #searchbar form {
   width: 100%;
 }
-
 #busqueda {
   float: left;
   padding-left: 17px;
@@ -113,7 +101,6 @@ main {
   font-size: 17px;
   width: calc(100% - 50px);
 }
-
 #searchbar button {
   float: right;
   padding: 7px 10px;
@@ -124,11 +111,10 @@ main {
   font-size: 17px;
   cursor: pointer;
 }
-
 #searchbar button:hover {
   background: var(--color-2);
 }
-
+/* HOME */
 /* Title */
 #topt {
   width: 27%;
@@ -142,21 +128,18 @@ main {
   align-items: center;
   background-color: white;
 }
-
 #maintitle {
   margin-bottom: -5px;
   font-family: var(--titlefont);
   font-size: 5.5rem;
   color: var(--color-3);
 }
-
 #mainsubt {
   text-transform: uppercase;
   font-family: var(--subfont);
   font-size: 1.2rem;
   letter-spacing: 8px;
 }
-
 /* main page */
 #mainpage {
   width: 75%;
@@ -171,14 +154,12 @@ main {
   grid-template-rows: 1fr 1fr;
   gap: 40px;
 }
-
 .bloq {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 100px;
 }
-
 #bloq-1 {
   padding-right: 100px;
   border-top-left-radius: 50%;
@@ -187,18 +168,15 @@ main {
   border-bottom-right-radius: 50px;
   background: linear-gradient(to left, var(--color-5), white);
 }
-
 #bloqintro {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 #empower {
   font-family: var(--titlefont);
   font-size: 6.5rem;
 }
-
 #bloq-2 {
   padding-left: 100px;
   border-top-left-radius: 50px;
@@ -207,30 +185,25 @@ main {
   border-bottom-right-radius: 50%;
   background: linear-gradient(to right, var(--color-5), white);
 }
-
 #bloqcta {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 #today {
   font-family: var(--titlefont);
   font-size: 6.5rem;
 }
-
 #CTA {
   text-align: center;
   font-family: var(--subfont);
   font-weight: 400;
 }
-
 #bloqcta a {
   margin-top: 15px;
   display: flex;
   justify-content: center;
 }
-
 #bloqcta button {
   padding: 15px 20px;
   border: none;
@@ -242,12 +215,10 @@ main {
   font-size: var(--large-fs);
   cursor: pointer;
 }
-
 #bloqcta button:hover {
   background: var(--color-2);
   color: var(--color-5);
 }
-
 .texthigh {
   font-family: var(--titlefont);
   font-size: 1.75rem;
@@ -255,7 +226,6 @@ main {
   font-style: italic;
   color: var(--color-2);
 }
-
 .intitle {
   font-family: var(--titlefont);
   font-size: 4.5rem;
@@ -263,13 +233,106 @@ main {
   white-space: nowrap;
   text-align: start;
 }
-
 .intext {
   font-family: var(--mainfont);
   font-size: var(--medium-fs);
   text-align: justify;
 }
-
+/* GALLERY */
+div#gallery{
+  width: 90%;
+  margin: 50px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.galgrid{
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.galcont{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.galtext{
+  font-family: var(--titlefont);
+  color: var(--color-1);
+  font-size: var(--medium-fs);
+  font-weight: 500;
+}
+/* ABOUT */
+#about-main{
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#ourhist{
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#logoimg{
+  margin-bottom: 50px;
+}
+#histitle{
+  padding: 20px 20px 0px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: white;
+}
+#histext{
+  padding: 30px 50px 30px 50px;
+  background-color: white;
+  border-radius: 50px;
+  text-align: justify;
+}
+.abo{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ourtitle{
+  padding: 20px 20px 0px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: white;
+}
+#ourteam{
+  padding: 30px;
+  background-color: white;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.aboteam{
+  padding: 20px 50px 20px 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(to bottom,white, var(--color-5));
+  gap: 20px;
+}
+.abotitle{
+  font-family: var(--titlefont);
+  font-size: var(--extral-fs);
+  color: var(--color-2);
+}
+.abotext{
+  font-family: var(--mainfont);
+  font-size: var(--medium-fs);
+  color: black;
+  text-align: justify;
+}
 /* Footer */
 footer {
   width: 100%;
@@ -278,42 +341,35 @@ footer {
   height: 250px;
   background: linear-gradient(rgb(245, 189, 152), var(--color-1));
 }
-
 div#botsections {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 div.botcolumn {
   display: flex;
   justify-items: center;
 }
-
 div#logo {
   width: 33%;
   margin-top: 30px;
 }
-
 div#logo a {
   margin-left: auto;
   margin-right: auto;
 }
-
 div#botnav {
   width: 50%;
   margin-top: auto;
   margin-bottom: auto;
   justify-content: center;
 }
-
 ul#botlist {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
-
 ul#botlist li a {
   display: block;
   margin: 15px;
@@ -322,18 +378,15 @@ ul#botlist li a {
   font-size: var(--medium-fs);
   color: var(--color-5);
 }
-
 ul#botlist li a:hover {
   color: white;
 }
-
 div#bottext {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 div#social-icons {
   width: 33%;
   margin-top: 15px;
@@ -341,20 +394,16 @@ div#social-icons {
   flex-direction: row;
   justify-content: center;
 }
-
 div#social-icons a {
   margin: 0px 15px;
 }
-
 .fa-brands {
   font-size: 25px;
   color: var(--color-5);
 }
-
 .fa-brands:hover {
   color: white;
 }
-
 div#copyright {
   width: 50%;
   text-align: center;
