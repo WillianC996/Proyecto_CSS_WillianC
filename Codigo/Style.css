@@ -333,6 +333,54 @@ div#gallery{
   color: black;
   text-align: justify;
 }
+/* Reviews */
+#review-main{
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainrevtitle{
+  padding: 20px 40px 0px 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: white;
+  font-family: var(--titlefont);
+  font-size: 4rem;
+  color: var(--color-1);
+}
+#mainrev{
+  padding: 20px;
+  border-radius: 50px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.review{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items:start
+}
+.revtitle{
+  padding: 10px 20px 0px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: var(--color-5);
+  font-family: var(--titlefont);
+  font-size: 2rem;
+  color: var(--color-1);
+}
+.revtext{
+  padding: 20px;
+  border-radius: 0px 20px 20px 20px;
+  background-color: var(--color-5);
+  background: linear-gradient(var(--color-5), white);
+  font-family: var(--subfont);
+}
+
 /* Footer */
 footer {
   width: 100%;
