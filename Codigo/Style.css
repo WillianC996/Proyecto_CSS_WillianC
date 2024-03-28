@@ -24,6 +24,9 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   background-image: url(../Imagenes/Fondo-1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 a {
   text-decoration: none;
@@ -34,7 +37,6 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
 /* NAV BAR */
 #navbar {
   width: 100%;
@@ -237,6 +239,7 @@ main {
   font-family: var(--mainfont);
   font-size: var(--medium-fs);
   text-align: justify;
+  line-height: 1.5;
 }
 /* GALLERY */
 div#gallery{
@@ -332,6 +335,7 @@ div#gallery{
   font-size: var(--medium-fs);
   color: black;
   text-align: justify;
+  line-height: 1.8;
 }
 /* Reviews */
 #review-main{
@@ -380,9 +384,71 @@ div#gallery{
   background-color: var(--color-5);
   background: linear-gradient(var(--color-5), white);
   font-family: var(--subfont);
+  font-size: 17px;
+  line-height: 1.4;
   text-align: justify;
 }
-/* cotacts */
+/* Contact */
+#contact-main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contform{
+  padding: 20px;
+  border-radius: 50px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-template-areas:
+  "fname fname lname lname"
+  "email email pnumber pnumber"
+  "continp continp continp continp"
+  "subject subject subject subject"
+  "contnews contnews contnews contnews"
+  "submit submit submit submit"
+}
+#fname{
+  display: grid;
+  place-items: center;
+  grid-area: fname;
+}
+#lname{
+  display: grid;
+  place-items: center;
+  grid-area: lname;
+}
+#email{
+  display: grid;
+  place-items: center;
+  grid-area: email;
+}
+#pnumber{
+  display: grid;
+  place-items: center;
+  grid-area: pnumber;
+}
+#continp{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-area: continp;
+}
+#subject{
+  display: grid;
+  place-items: center;
+  grid-area: subject;
+}
+#contnews{
+  grid-area: contnews;
+}
+#submit{
+  display: grid;
+  place-items: center;
+  grid-area: submit;
+}
 /* Footer */
 footer {
   width: 100%;
